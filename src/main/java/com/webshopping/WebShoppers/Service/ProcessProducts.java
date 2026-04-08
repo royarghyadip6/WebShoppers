@@ -1,6 +1,6 @@
 package com.webshopping.WebShoppers.Service;
 
-import com.webshopping.WebShoppers.Data.Product;
+import com.webshopping.WebShoppers.Entity.Product;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

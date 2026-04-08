@@ -1,8 +1,7 @@
 package com.webshopping.WebShoppers.Controller;
 
-import com.webshopping.WebShoppers.Data.Product;
+import com.webshopping.WebShoppers.Entity.Product;
 import com.webshopping.WebShoppers.Service.ProcessProducts;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,16 +12,13 @@ import java.util.List;
 public class WebShoppersController {
 
     private ProcessProducts processProducts;
-    private Product product;
 
     /**
      * Constructor Injection :
      * @param processProducts
-     * @param product
      */
-    public WebShoppersController(ProcessProducts processProducts, Product product) {
+    public WebShoppersController(ProcessProducts processProducts) {
         this.processProducts = processProducts;
-        this.product = product;
     }
 
     @RequestMapping(value = "/",method = RequestMethod.GET)
