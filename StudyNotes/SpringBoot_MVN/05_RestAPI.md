@@ -33,6 +33,11 @@ REST API (Representational State Transfer) is an **architectural style** used to
 * Server returns responses such as JSON, XML, HTML, or images.
 * Maps HTTP methods to CRUD operations (Create, Read, Update, Delete).
  
+![RestAPI_WorkFlow.png](Images/RestAPI_WorkFlow.png)
+
+> **Note**: REST is an architectural style that defines how APIs should be designed, whereas HTTP is the protocol used to transfer data between client and server. They work together, but they are not the same.
+
+
 ---
 
 # 🧠 What is REST?
@@ -188,7 +193,33 @@ Deleting again won’t change result
 
 ---
 
+## Differences Between PUT and PATCH
+
+> Both PATCH and PUT are used to update resources on the server, but they differ in how they handle the update process:
+
+| PUT	                                       | PATCH                                 |
+|--------------------------------------------|---------------------------------------|
+| Replaces the entire resource	              | Updates only specified fields         |
+| Must send full data	                       | Only sends changes                    |
+| Idempotent	                                | Not always idempotent                 |
+| Example: Updating a user’s entire profile	 | Example: Changing just a user’s email |
+
+---
+
 # 📦 HTTP Status Codes (Detailed)
+
+> When you visit a website or make a request online, your browser communicates with a server using HTTP (Hypertext Transfer Protocol). The server responds with a three-digit HTTP status code that indicates whether the request was successful or if something went wrong.
+
+## What are HTTP Status Codes?
+
+The HTTP status code is a response made by the server to the client's request. These are three-digit codes. [There are over 60 status codes](https://www.geeksforgeeks.org/computer-networks/what-are-http-status-codes/), but they fall into five main categories:
+
+* 1xx - Informational Response (These status codes are all about the information received by the server when a request is made).
+* 2xx - Success (This status code depicts that the request made has been fulfilled by the server and the expected response has been achieved).
+* 3xx - Redirection (The requested URL is redirected elsewhere).
+* 4xx - Client Errors (This indicates that the page is not found).
+* 5xx - Server Errors (A request made by the client but the server fails to complete the request).
+
 
 ## ✅ 2xx Success
 
@@ -381,7 +412,7 @@ ETag: "abc123"
 # 🔍 REST vs SOAP
 
 | Feature     | REST          | SOAP     |
-| ----------- | ------------- | -------- |
+|-------------|---------------|----------|
 | Style       | Architectural | Protocol |
 | Data        | JSON          | XML      |
 | Speed       | Fast          | Slow     |
@@ -466,24 +497,3 @@ public class UserController {
 * Use stateless design
 
 ---
-
-# 🚀 Summary
-
-* REST is resource-based
-* Uses HTTP methods
-* Stateless & scalable
-* Uses JSON
-* Widely used in modern systems
-
----
-
-# 🎯 Final Tip
-
-In interviews:
-👉 Always give **real-world examples + explain WHY**
-
----
-
-# 🚀 End
-
-You now have strong, interview-ready REST API knowledge!
