@@ -19,6 +19,7 @@ We can configure the application context with the annotations described in this 
 
 ### ✅ 1.1.1. `@Profile`
 👉 If we want Spring to use a @Component class or a @Bean method only when a specific profile is active, we can mark it with @Profile. We can configure the name of the profile with the value argument of the annotation:
+
 ```java
 @Component
 @Profile("sportDay")
@@ -26,7 +27,7 @@ class Bike implements Vehicle {
     
 }
 ```
-You can read more about profiles in this article.
+You can read more about profiles in [this article](https://www.baeldung.com/spring-profiles).
 
 ### ✅ 1.1.2. `@Import`
 👉 We can use specific @Configuration classes without component scanning with this annotation. We can provide those classes with @Import‘s value argument:
