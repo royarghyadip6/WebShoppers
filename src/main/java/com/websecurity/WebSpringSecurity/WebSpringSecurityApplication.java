@@ -1,13 +1,13 @@
-package com.webshopping.WebShoppers;
+package com.websecurity.WebSpringSecurity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WebShoppersApplication {
+public class WebSpringSecurityApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WebShoppersApplication.class, args);
+		SpringApplication.run(WebSpringSecurityApplication.class, args);
 	}
 
 }

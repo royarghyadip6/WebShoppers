@@ -1,8 +1,6 @@
-package com.webshopping.WebShoppers.Controller.Security;
+package com.websecurity.WebSpringSecurity.Controller.Security;
 
-import com.webshopping.WebShoppers.Security.JWT.JwtUtils;
-import jakarta.annotation.Resource;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.websecurity.WebSpringSecurity.Security.JWT.JwtUtils;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

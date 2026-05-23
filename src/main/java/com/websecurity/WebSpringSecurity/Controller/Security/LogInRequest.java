@@ -1,4 +1,4 @@
-package com.webshopping.WebShoppers.Controller.Security;
+package com.websecurity.WebSpringSecurity.Controller.Security;
 
 public class LogInRequest {
     private String username;

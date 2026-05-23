@@ -1,4 +1,4 @@
-package com.webshopping.WebShoppers.Security.JWT;
+package com.websecurity.WebSpringSecurity.Security.JWT;
 
 import io.jsonwebtoken.Jwts;
 import jakarta.servlet.http.HttpServletRequest;
